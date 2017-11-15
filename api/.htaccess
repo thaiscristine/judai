@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+
+	 RewriteEngine On
+
+	 RewriteRule criar-sessao/?$ criar-sessao.php [NC,L]	 
+
+     RewriteRule dialogo/([a-z0-9-]+)/?$ dialogo.php?indice=$1 [NC,L]
+     RewriteRule dialogo/([a-z0-9-]+)/([a-z0-9-]+)/?$ dialogo.php?param=$1&indice2=$2 [NC,L]
+
+</IfModule>
